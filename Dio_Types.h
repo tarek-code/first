@@ -1,3 +1,12 @@
+/*****************************************
+ *  Dio_Types.h
+ *  Created on:  10,12, 2022
+ *  Author: Tarek Adel
+ **************************************/
+
+#ifndef Dio_Types_H_
+#define Dio_Types_H_
+
 #include "Bit_Math.h"
 
 
@@ -38,5 +47,5 @@ LOW,
 HIGH
 }Dio_ChannelLevel;
 
-
+#endif /* Dio_Types_H_ */
 

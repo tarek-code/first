@@ -23,5 +23,7 @@ typedef double 				f64;
 	FALSE,
 	TRUE
 		}boolean;
-
+#define NULL          ((void *)0)
+	#define WORD_LENGTH_BITS      32u
+#define WORD_LENGTH_BYTES     4u
 #endif /* STD_TYPES_H_ */

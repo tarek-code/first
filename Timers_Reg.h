@@ -10,7 +10,7 @@
 
 #include "std_Types.h"
 
-
+// GPT BASE
 #define GPT_Timer0_BASE 			(0x40030000)
 #define GPT_Timer1_BASE 			(0x40031000)
 #define GPT_Timer2_BASE 			(0x40032000)
@@ -25,6 +25,16 @@
 #define GPT_WIDE_Timer5_BASE 	(0x4004F000)
 #define RCGCTIMER_BASE				(0x400FE000)
 
+
+
+
+
+
+
+
+
+
+// GPT OFFSET
 #define GPT_GPTMIMR_OFFSET		(0x018)          // GPTM Interrupt Mask
 #define GPT_GPTMCFG_OFFSET		(0x000)          // GPTM Configuration
 #define GPT_GPTMTAV_OFFSET		(0x050)          // GPTM Timer A Value 
@@ -42,6 +52,7 @@
 #define GPT_GPTMTBPR_OFFSET		(0x03C)					//GPTM Timer B Prescale
 #define GPT_GPTMTAILR_OFFSET	(0x028)					// GPTM Timer A Interval Load
 #define GPT_GPTMTBILR_OFFSET	(0x02C)					// GPTM Timer B Interval Load
+#define GPT_GPTMICR_OFFSET		(0x024)					// GPTM Interrupt Clear
 
 #define RCGCTIMER_Reg 				(*(u32 volatile*)(RCGCTIMER_OFFSET+RCGCTIMER_BASE))
 #define RCGCWTIMER_Reg 				(*(u32 volatile*)(RCGCTIMER_OFFSET+RCGCTIMER_BASE))
@@ -82,6 +93,7 @@
 #define GPT_GPTMTBPR_Timer1_REG    (*(u32 volatile*)(GPT_Timer1_BASE+GPT_GPTMTBPR_OFFSET))
 #define GPT_GPTMTBILR_Timer1_REG    (*(u32 volatile*)(GPT_Timer1_BASE+GPT_GPTMTAILR_OFFSET))
 #define GPT_GPTMTAILR_Timer1_REG    (*(u32 volatile*)(GPT_Timer1_BASE+GPT_GPTMTBILR_OFFSET))
+#define GPT_GPTMICR_Timer1_REG    	(*(u32 volatile*)(GPT_Timer1_BASE+GPT_GPTMTBILR_OFFSET))
 
 
 

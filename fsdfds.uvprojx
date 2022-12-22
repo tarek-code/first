@@ -382,7 +382,45 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>APPLICATION </GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HAL</GroupName>
+        </Group>
+        <Group>
+          <GroupName>MCAL</GroupName>
+          <Files>
+            <File>
+              <FileName>Dio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Dio.c</FilePath>
+            </File>
+            <File>
+              <FileName>GPT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GPT.c</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\NVIC.c</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick_Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SysTick_Timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SERVICE</GroupName>
           <Files>
             <File>
               <FileName>std_Types.h</FileName>
@@ -394,16 +432,11 @@
               <FileType>5</FileType>
               <FilePath>.\Bit_Math.h</FilePath>
             </File>
-            <File>
-              <FileName>Dio_Private.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Dio_Private.h</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>LIBRARIES</GroupName>
+          <Files>
             <File>
               <FileName>Dio_Types.h</FileName>
               <FileType>5</FileType>
@@ -413,11 +446,6 @@
               <FileName>Dio_Interface.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Dio_Interface.h</FilePath>
-            </File>
-            <File>
-              <FileName>Dio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Dio.c</FilePath>
             </File>
             <File>
               <FileName>Timers_Reg.h</FileName>
@@ -430,14 +458,49 @@
               <FilePath>.\GPT_Types.h</FilePath>
             </File>
             <File>
-              <FileName>GPT.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\GPT.c</FilePath>
-            </File>
-            <File>
               <FileName>GPT_Interface.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\GPT_Interface.h</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC_Interface.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\NVIC_Interface.h</FilePath>
+            </File>
+            <File>
+              <FileName>Dio_Private.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Dio_Private.h</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick_Timer_Interface.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SysTick_Timer_Interface.h</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick_Timer_Cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SysTick_Timer_Cfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick_Timer_Private.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SysTick_Timer_Private.h</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC_Types.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\NVIC_Types.h</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC_Reg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\NVIC_Reg.h</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick_Timer_Reg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SysTick_Timer_Reg.h</FilePath>
             </File>
           </Files>
         </Group>

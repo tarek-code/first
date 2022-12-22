@@ -13,7 +13,8 @@ void GPT_Int( t_mode mode ,timer_type type , t_counts counts,t_interrupt interru
 		SET_BIT(RCGCTIMER_Reg,0);
 		
 		
-		
+		/* Interval Load */
+		GPT_GPTMTAILR_Timer0_REG=200&0xFFFF;
 		
 		// disable the timer
 		CLEAR_BIT(GPT_GPTMCTL_Timer0_REG,TAEN);
@@ -153,7 +154,8 @@ void GPT_Int( t_mode mode ,timer_type type , t_counts counts,t_interrupt interru
 		
 			break;
 		}
-		
+			/* Interval Load */
+		GPT_GPTMTAILR_Timer0_REG=200&0xFFFF;
 		break;
 		
 		case TIMER0_B_16:
@@ -219,7 +221,8 @@ void GPT_Int( t_mode mode ,timer_type type , t_counts counts,t_interrupt interru
 			break;
 		}
 		break;
-		
+			/* Interval Load */
+		GPT_GPTMTBILR_Timer0_REG=200&0xFFFF;
 		case TIMER0_B_32:
 			// enable clock to the register  in timer0
 		SET_BIT(RCGCWTIMER_Reg,0);
@@ -2035,3 +2038,6 @@ switch (type)
 	break;
 }
 }
+
+
+
