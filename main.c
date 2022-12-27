@@ -1,10 +1,10 @@
 #include "Dio_Interface.h"
 #include "SysTick_Timer_Interface.h"
-
+void Delay(u32 ontime,u32 offtime);
 
 int main(void)
 {
-	
+	u32 ONTime=15999999,OFFTime=15999999;
 	SysTickEnable();
 
 
@@ -19,13 +19,8 @@ Dio_ConfigureChannel(DIO_PORTF,CHANNEL0,OUTPUT);
 	{
 		
 			
-		Dio_WriteChannel(DIO_PORTF,CHANNEL0,HIGH); // LED ON
-		SysTickPeriodSet(15999999);
-		
-		
-		Dio_WriteChannel(DIO_PORTF,CHANNEL0,LOW); // LED OFF
-		SysTickPeriodSet(15999999);
 	
+	Delay(ONTime,OFFTime);
 		
 	}
 	
@@ -33,3 +28,12 @@ Dio_ConfigureChannel(DIO_PORTF,CHANNEL0,OUTPUT);
 }
 
 
+void Delay(u32 ontime,u32 offtime)
+{
+	Dio_WriteChannel(DIO_PORTF,CHANNEL0,HIGH); // LED ON
+		SysTickPeriodSet(ontime);
+		
+		
+		Dio_WriteChannel(DIO_PORTF,CHANNEL0,LOW); // LED OFF
+		SysTickPeriodSet(offtime);
+}
